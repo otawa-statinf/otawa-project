@@ -246,7 +246,7 @@ class Monitor:
 			else:
 				err = self.err
 		try:
-			return subprocess.check_output(cmd, stderr=err, shell=True, text=True)
+			return subprocess.check_output(cmd, stderr=err, shell=True, universal_newlines=True)
 		except subprocess.CalledProcessError as e:
 			self.log(str(e))
 			return None
