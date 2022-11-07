@@ -1,0 +1,3 @@
+[submodule "otawa"]
+	path = otawa
+	url = https://github.com/jordr/otawa
