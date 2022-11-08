@@ -1,3 +1,15 @@
 [submodule "otawa"]
 	path = otawa
 	url = https://github.com/jordr/otawa
+[submodule "otawa-tricore"]
+	path = otawa-tricore
+	url = https://github.com/hcasse/otawa-tricore.git
+[submodule "otawa-TC275T"]
+	path = otawa-TC275T
+	url = https://github.com/hcasse/otawa-TC275T.git
+[submodule "elm"]
+	path = elm
+	url = https://github.com/jordr/elm
+[submodule "thot"]
+	path = thot
+	url = https://github.com/hcasse/Thot.git
