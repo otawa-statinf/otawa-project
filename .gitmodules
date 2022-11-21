@@ -13,3 +13,9 @@
 [submodule "thot"]
 	path = thot
 	url = https://github.com/hcasse/Thot.git
+[submodule "frontc"]
+	path = frontc
+	url = https://github.com/jordr/frontc
+[submodule "orange"]
+	path = orange
+	url = https://github.com/jordr/orange
