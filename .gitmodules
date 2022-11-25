@@ -43,3 +43,21 @@
 [submodule "gliss2/sparc"]
 	path = gliss2/sparc
 	url = https://git.renater.fr/anonscm/git/gliss2/sparc.git
+[submodule "otawa-ppc"]
+	path = otawa-ppc
+	url = https://git.renater.fr/anonscm/git/otawa/otawa-ppc.git
+[submodule "otawa-mpc5554"]
+	path = otawa-mpc5554
+	url = https://git.renater.fr/anonscm/git/otawa/otawa-mpc5554.git
+[submodule "otawa-lp_solve5"]
+	path = otawa-lp_solve5
+	url = https://git.renater.fr/anonscm/git/otawa/otawa-lp_solve5.git
+[submodule "otawa-arm"]
+	path = otawa-arm
+	url = https://git.renater.fr/anonscm/git/otawa/otawa-arm.git
+[submodule "gel"]
+	path = gel
+	url = https://git.renater.fr/anonscm/git/otawa/gel.git
+[submodule "gelpp"]
+	path = gelpp
+	url = https://git.renater.fr/anonscm/git/otawa/gelpp.git
