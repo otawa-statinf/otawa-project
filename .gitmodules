@@ -28,3 +28,18 @@
 [submodule "otawa-riscv"]
 	path = otawa-riscv
 	url = https://github.com/jordr/otawa-riscv.git
+[submodule "gliss2/armv5t"]
+	path = gliss2/armv5t
+	url = https://git.renater.fr/anonscm/git/gliss2/armv5t.git
+[submodule "gliss2/armv7t"]
+	path = gliss2/armv7t
+	url = https://git.renater.fr/anonscm/git/gliss2/armv7t.git
+[submodule "gliss2/mips"]
+	path = gliss2/mips
+	url = https://git.renater.fr/anonscm/git/gliss2/mips.git
+[submodule "gliss2/ppc"]
+	path = gliss2/ppc
+	url = https://git.renater.fr/anonscm/git/gliss2/ppc.git
+[submodule "gliss2/sparc"]
+	path = gliss2/sparc
+	url = https://git.renater.fr/anonscm/git/gliss2/sparc.git
