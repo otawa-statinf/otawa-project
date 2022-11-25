@@ -19,3 +19,12 @@
 [submodule "orange"]
 	path = orange
 	url = https://github.com/jordr/orange
+[submodule "gliss2/gliss2"]
+	path = gliss2/gliss2
+	url = https://github.com/jordr/gliss2
+[submodule "gliss2/riscv"]
+	path = gliss2/riscv
+	url = https://github.com/jordr/riscv
+[submodule "otawa-riscv"]
+	path = otawa-riscv
+	url = https://github.com/jordr/otawa-riscv.git
