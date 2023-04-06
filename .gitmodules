@@ -60,4 +60,4 @@
 	url = https://git.renater.fr/anonscm/git/otawa/gel.git
 [submodule "gelpp"]
 	path = gelpp
-	url = https://git.renater.fr/anonscm/git/otawa/gelpp.git
+	url = https://github.com/jordr/gelpp
