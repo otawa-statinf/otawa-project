@@ -35,7 +35,7 @@ USER statinf
 WORKDIR /home/statinf
 
 # Copy benchmarks onto image
-COPY --chown=statinf:statinf ./benchmarks /home/statinf/benchmarks/
+# COPY --chown=statinf:statinf ./benchmarks /home/statinf/benchmarks/
 
 RUN git clone --branch=tms --recursive https://github.com/jordr/otawa-project otawa-project # && cd otawa-project && git rev-parse HEAD
 
@@ -53,7 +53,7 @@ RUN cd ./otawa     && git checkout master && cmake -DCMAKE_INSTALL_PREFIX=../ota
 ENV PATH="$PATH:/home/statinf/otawa-project/otawa-install/bin"
 
 # Test
-RUN odec /home/statinf/benchmarks/main5.out
+RUN odec /home/statinf/otawa-project/benchmarks/main5.out
 
 
 # command executable and version
