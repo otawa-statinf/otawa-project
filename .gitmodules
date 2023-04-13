@@ -37,3 +37,6 @@
 [submodule "gliss2"]
 	path = gliss2
 	url = https://github.com/jordr/gliss2
+[submodule "obsview"]
+	path = obsview
+	url = https://git.renater.fr/anonscm/git/otawa/obviews.git
