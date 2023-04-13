@@ -1,33 +1,12 @@
 [submodule "otawa"]
 	path = otawa
 	url = https://github.com/jordr/otawa
-[submodule "otawa-tricore"]
-	path = otawa-tricore
-	url = https://github.com/hcasse/otawa-tricore.git
-[submodule "otawa-TC275T"]
-	path = otawa-TC275T
-	url = https://github.com/hcasse/otawa-TC275T.git
 [submodule "elm"]
 	path = elm
 	url = https://github.com/jordr/elm
-[submodule "thot"]
-	path = thot
-	url = https://github.com/hcasse/Thot.git
-[submodule "frontc"]
-	path = frontc
-	url = https://github.com/jordr/frontc
-[submodule "orange"]
-	path = orange
-	url = https://github.com/jordr/orange
-[submodule "gliss2/gliss2"]
-	path = gliss2/gliss2
-	url = https://github.com/jordr/gliss2
 [submodule "gliss2/riscv"]
 	path = gliss2/riscv
 	url = https://github.com/jordr/riscv
-[submodule "otawa-riscv"]
-	path = otawa-riscv
-	url = https://github.com/jordr/otawa-riscv.git
 [submodule "gliss2/armv5t"]
 	path = gliss2/armv5t
 	url = https://git.renater.fr/anonscm/git/gliss2/armv5t.git
@@ -43,21 +22,18 @@
 [submodule "gliss2/sparc"]
 	path = gliss2/sparc
 	url = https://git.renater.fr/anonscm/git/gliss2/sparc.git
-[submodule "otawa-ppc"]
-	path = otawa-ppc
-	url = https://git.renater.fr/anonscm/git/otawa/otawa-ppc.git
-[submodule "otawa-mpc5554"]
-	path = otawa-mpc5554
-	url = https://git.renater.fr/anonscm/git/otawa/otawa-mpc5554.git
-[submodule "otawa-lp_solve5"]
-	path = otawa-lp_solve5
-	url = https://git.renater.fr/anonscm/git/otawa/otawa-lp_solve5.git
-[submodule "otawa-arm"]
-	path = otawa-arm
-	url = https://git.renater.fr/anonscm/git/otawa/otawa-arm.git
 [submodule "gel"]
 	path = gel
 	url = https://git.renater.fr/anonscm/git/otawa/gel.git
 [submodule "gelpp"]
 	path = gelpp
 	url = https://github.com/jordr/gelpp
+[submodule "tms"]
+	path = tms
+	url = https://github.com/statinf-software/tms
+[submodule "otawa-tms"]
+	path = otawa-tms
+	url = https://github.com/statinf-software/otawa-tms
+[submodule "gliss2"]
+	path = gliss2
+	url = https://github.com/jordr/gliss2
