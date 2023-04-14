@@ -47,13 +47,13 @@ RUN cd ./gliss2    && git checkout master && make
 RUN	cd ./tms       && git checkout master && make
 RUN cd ./otawa     && git checkout master && cmake -DCMAKE_INSTALL_PREFIX=../otawa-install . && make -j4 && make install
 RUN cd ./otawa-tms && git checkout master && cmake -DCMAKE_INSTALL_PREFIX=../otawa-install -DOTAWA_CONFIG=../otawa-install/bin/otawa-config . && make && make install
-RUN cd ./otawa     && git checkout master && cmake -DCMAKE_INSTALL_PREFIX=../otawa-install . && make -j4 && make install
+# RUN cd ./otawa     && git checkout master && cmake -DCMAKE_INSTALL_PREFIX=../otawa-install . && make -j4 && make install
 
 # Set proper path
 ENV PATH="$PATH:/home/statinf/otawa-project/otawa-install/bin"
 
 # Test
-RUN odec /home/statinf/otawa-project/benchmarks/main5.out
+CMD odec /home/statinf/otawa-project/benchmarks/main5.out
 
 
 # command executable and version
