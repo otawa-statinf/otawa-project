@@ -1,0 +1,100 @@
+checksum "l_CPU1.out" 0xdb927dac;
+
+// this is if you want to disable some of the functions called from _main
+// nocall 0x11ce9e;
+// nocall 0x11f722;
+// nocall 0x11ed2e;
+// nocall 0x11f6a4;
+// nocall 0x11f5a2;
+// nocall 0x114586;
+
+// here we explicitly say what the indirect calls point to
+multicall 0x11ed88 to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x11cec8 to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x11f73a to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x1163f6 to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x1196fa to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x115c0a to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x115c24 to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x11460a to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x114582 to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x11459a to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x1145b2 to 0x11ed2e; // hack: everything to functionNo4
+multicall 0x1145ca to 0x11ed2e; // hack: everything to functionNo4
+
+loop 0x0011f6aa 42;
+loop 0x0011f5a2 42;
+loop 0x0011ca24 42;
+loop 0x0011ca62 42;
+loop 0x0011c9ca 42;
+loop 0x0011cb56 42;
+loop 0x0011cb44 42;
+loop 0x0011c880 42;
+loop 0x0011c86e 42;
+loop 0x0011cbfe 42;
+loop 0x0011ccc8 42;
+loop 0x0011ccfc 42;
+loop 0x0011ccb6 42;
+loop 0x0011c7a4 42;
+loop 0x0011c792 42;
+loop 0x0011cdbc 42;
+loop 0x0011cdaa 42;
+loop 0x0011ce2c 42;
+loop 0x0011ce0e 42;
+loop 0x0011ebb4 42;
+loop 0x0011ebb2 42;
+loop 0x0011ecb8 42;
+loop 0x0011ecb6 42;
+loop 0x0011ecdc 42;
+loop 0x0011eb6a 42;
+loop 0x0011f560 42;
+loop 0x0011e14a 42;
+loop 0x0011934e 42;
+loop 0x00119330 42;
+loop 0x00119312 42;
+loop 0x001192f4 42;
+loop 0x001192d6 42;
+loop 0x001192b8 42;
+loop 0x0011929a 42;
+loop 0x0011927c 42;
+loop 0x0011925e 42;
+loop 0x00119240 42;
+loop 0x00119222 42;
+loop 0x00119204 42;
+loop 0x001191e6 42;
+loop 0x001191c8 42;
+loop 0x001191aa 42;
+loop 0x0011918c 42;
+loop 0x0011916e 42;
+loop 0x00119150 42;
+loop 0x00119132 42;
+loop 0x00119114 42;
+loop 0x001190f6 42;
+loop 0x001190d8 42;
+loop 0x001190ba 42;
+loop 0x0011909c 42;
+loop 0x0011907e 42;
+loop 0x00119060 42;
+loop 0x00119042 42;
+loop 0x00119024 42;
+loop 0x00119006 42;
+loop 0x0011f70e 42;
+loop 0x0011f70a 42;
+loop 0x0011f6f4 42;
+loop 0x0011bdfa 42;
+loop 0x0011bf96 42;
+loop 0x0011c384 42;
+loop 0x0011b8ba 42;
+loop 0x0011b974 42;
+loop 0x0011d1c0 42;
+loop 0x0011d4fe 42;
+loop 0x0011edc6 42;
+loop 0x0011ee08 42;
+loop 0x0011ee3a 42;
+loop 0x0011ee68 42;
+loop 0x0011eec4 42;
+loop 0x0011e0d2 42;
+loop 0x0011f79e 42;
+loop 0x0011b13a 42;
+loop 0x0011b148 42;
+loop 0x0011bbc8 42;
