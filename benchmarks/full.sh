@@ -25,11 +25,11 @@ echo -e "\e[0;94mGenerating $name.$entry.gliss using odisasm... \e[0;m"
 echo -e "\e[0;94mGenerating $name.$entry.dot using dumpcfg... \e[0;m"
 	echo "$ dumpcfg -Dads $binpath $entry  > $name.$entry.dot "
 	dumpcfg -Dads $binpath $entry  > $name.$entry.dot 
-	#dumpcfg -Wads $binpath $entry 
+	dumpcfg -Wds $binpath $entry 
 	echo -e "\t\t\t\e[0;92m... OK\e[0m"
 echo -e "\e[0;94mGenerating $name-otawa using owcet... \e[0;m"
 	echo "$ owcet -s trivial --stats $binpath $2"
 	owcet -s trivial --stats $binpath $2
 	echo -e "\t\t\t\e[0;92m... OK\e[0m"
-echo -ne "\e[0;94mRun: obviews.py $1 _x"${2#"0x"}
+echo -ne "\e[0;94mRun: obviews.py $1 $2" #_x"${2#"0x"}
 echo -e "\e[0;m"
