@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Config variables to change here
+OTAWA_PROJECT_PATH=~/o/optms
+
+opp=$OTAWA_PROJECT_PATH
+for arg in "$@"
+do
+	case $arg in
+		gitf|git\-fetch )
+			cd $opp; git submodule foreach 'git remote update; echo' ;;
+		gits|git-status )
+			cd $opp; git submodule foreach 'git status -uno -sb --ahead-behind; echo' ;;
+		gitp|git\-pull )
+			cd $opp; git submodule foreach 'git pull; echo' ;;
+		otawa )
+			(cd $opp/otawa; make install -j9) || exit 1;;
+		elm )
+			(cd $opp/elm; make install -j9) || exit 1;;
+		gelpp )
+			(cd $opp/gelpp; make install) || exit 1;;
+		otawa-tms|otms )
+			(cd $opp/otawa-tms; make install) || exit 1;;
+		obviews )
+			(cd $opp/obviews; make install) || exit 1;;
+		tms )
+			(cd $opp/tms; make) || exit 1 ;;
+		* )
+		  echo "Argument $arg unknown."; exit 1 ;;
+	esac
+done
