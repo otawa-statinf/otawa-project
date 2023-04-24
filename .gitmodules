@@ -40,3 +40,9 @@
 [submodule "obsview"]
 	path = obsview
 	url = https://git.renater.fr/anonscm/git/otawa/obviews.git
+[submodule "lp_solve5"]
+	path = lp_solve5
+	url = https://git.renater.fr/anonscm/git/otawa/lp_solve5.git
+[submodule "otawa-lp_solve5"]
+	path = otawa-lp_solve5
+	url = https://git.renater.fr/anonscm/git/otawa/otawa-lp_solve5.git
