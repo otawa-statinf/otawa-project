@@ -14,17 +14,17 @@ do
 		gitp|git\-pull )
 			cd $opp; git submodule foreach 'git pull; echo' ;;
 		otawa )
-			(cd $opp/otawa; make install -j9) || exit 1;;
+			(cd "$opp/otawa"; make install -j9) || exit 1;;
 		elm )
-			(cd $opp/elm; make install -j9) || exit 1;;
+			(cd "$opp/elm"; make install -j9) || exit 1;;
 		gelpp )
-			(cd $opp/gelpp; make install) || exit 1;;
+			(cd "$opp/gelpp"; make install) || exit 1;;
 		otawa-tms|otms )
-			(cd $opp/otawa-tms; make install) || exit 1;;
+			(cd "$opp/otawa-tms"; make install) || exit 1;;
 		obviews )
-			(cd $opp/obviews; make install) || exit 1;;
+			(cd "$opp/obviews"; make install) || exit 1;;
 		tms )
-			(cd $opp/tms; make) || exit 1 ;;
+			(cd "$opp/tms"; make) || exit 1 ;;
 		* )
 		  echo "Argument $arg unknown."; exit 1 ;;
 	esac
