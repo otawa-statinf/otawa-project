@@ -1,16 +1,37 @@
-checksum "CPU1.out" 0x4f7d7736;
+checksum "mcp_app_CPU1.out" 0x4f7d7736;
 
 // Low-level flow facts
 return "L$$MOD" + 0x1a;	// 0x00136af0 () switch-like branch in "L$$MOD"
+
 return "L$$DIV" + 0x1c;	// 0x00136ad4 (./l_div28.asm:102) switch-like branch in "L$$DIV"
-	
+
+
 // Function __KCG__APPLICATIVE_SOFTWARE_FAST ()
-loop 0x104c4 3 ; // 0x104c4 () /src/MODEL/_KCG__APPLICATIVE_SOFTWARE_FAST.c	551
-loop 0x1044e 4 ; // 0x1044e () /src/MODEL/_KCG__APPLICATIVE_SOFTWARE_FAST.c	529
-loop 0x1057e 4 ; // 0x1057e () /src/MODEL/_KCG__APPLICATIVE_SOFTWARE_FAST.c	589
-loop 0x105f4 3 ; // 0x105f4 () /src/MODEL/_KCG__APPLICATIVE_SOFTWARE_FAST.c	611
-loop 0x10812 3 ; // 0x10812 () /src/MODEL/_KCG__APPLICATIVE_SOFTWARE_FAST.c	739
-loop 0x108ac 3 ; // 0x108ac () /src/MODEL/_KCG__APPLICATIVE_SOFTWARE_FAST.c 765
-loop 0x109a0 5 ; // 0x109a0 () /src/MODEL/_KCG__APPLICATIVE_SOFTWARE_FAST.c	813
-loop 0x109e2 5 ; // 0x109e2 () /src/MODEL/_KCG__APPLICATIVE_SOFTWARE_FAST.c	827
-loop 0x10a7c 5 ; // 0x10a7c () /src/MODEL/_KCG__APPLICATIVE_SOFTWARE_FAST.c	852
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x44e 3 ; // 0x1044e ()
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x4c4 4 ; // 0x104c4 ()
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x57e 4 ; // 0x1057e ()
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x5f4 3 ; // 0x105f4 ()
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x812 3 ; // 0x10812 ()
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x8ac 3 ; // 0x108ac ()
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x9a0 5 ; // 0x109a0 ()
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x9e2 5 ; // 0x109e2 ()
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0xa7c 5 ; // 0x10a7c ()
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x4c 13 ; // 0x1004c (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x104 13 ; // 0x10104 (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x392 5 ; // 0x10392 (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0xbf4 19 ; // 0x10bf4 (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x7b0 3 ; // 0x107b0 (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x368 5 ; // 0x10368 (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x350 3 ; // 0x10350 (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x2d4 3 ; // 0x102d4 (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x288 3 ; // 0x10288 (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x21c 3 ; // 0x1021c (repeat instruction)
+loop "__KCG__APPLICATIVE_SOFTWARE_FAST" + 0x1ba 3 ; // 0x101ba (repeat instruction)
+
+// Function L$$MOD ()
+loop "L$$MOD" + 0x10 31 ; // 0x136ae6 (repeat instruction)
+
+// Function L$$DIV (./l_div28.asm:78)
+loop 0x136ac8 31 ; // 0x136ac8 (./l_div28.asm:91, repeat instruction)
+
+
