@@ -65,7 +65,7 @@
 	path = obviews
 	url = https://github.com/jordr/obviews
 [submodule "tms"]
-	path = gliss2/tms
+	path = tms
 	url = https://github.com/statinf-software/tms
 [submodule "otawa-tms"]
 	path = otawa-tms
