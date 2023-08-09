@@ -61,3 +61,12 @@
 [submodule "gelpp"]
 	path = gelpp
 	url = https://github.com/jordr/gelpp
+[submodule "obviews"]
+	path = obviews
+	url = https://github.com/jordr/obviews
+[submodule "obviews"]
+	path = gliss2/tms
+	url = https://github.com/statinf-software/tms
+[submodule "obviews"]
+	path = otawa-tms
+	url = https://github.com/statinf-software/otawa-tms
