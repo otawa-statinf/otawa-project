@@ -42,7 +42,7 @@
 	url = https://github.com/statinf-otawa/otawa-riscv.git
 [submodule "gliss2/armv5t"]
 	path = archs/armv5t
-	url = https://github.com/statinf-otawa/otawa-armv5t.git
+	url = https://github.com/statinf-otawa/armv5t.git
 [submodule "gliss2/armv7t"]
 	path = archs/armv7t
 	url = https://github.com/statinf-otawa/armv7t.git

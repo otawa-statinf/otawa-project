@@ -1,7 +1,17 @@
 # otawa-project
 Meta-repository of the OTAWA project. Fork of https://sourcesup.renater.fr/projects/otawa/.
 
-For documentation, see https://www.tracesgroup.net/otawa/. In particular, from [this page](https://www.tracesgroup.net/otawa/?page_id=419):
+## Cloning
+In order to clone this repository, you need to enable submodules:
+
+```sh
+git clone https://github.com/statinf-otawa/otawa-project --recurse-submodules
+```
+
+
+
+## Original documentation
+For the original documentation of the OTAWA project, see https://www.tracesgroup.net/otawa/. In particular, from [this page](https://www.tracesgroup.net/otawa/?page_id=419)
 
 > OTAWA v2 is embedding a new installation that supports OTAWA installation and third-party plug-in installation from web repository, called `otawa-install.py`. Note `otawa-install.py` should only work only for Linux but we hope to quickly adapt it to Mac and Windows.
 > 
