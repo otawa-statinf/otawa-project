@@ -20,40 +20,40 @@
 	path = orange
 	url = https://github.com/jordr/orange
 [submodule "gliss2/gliss2"]
-	path = gliss2/gliss2
+	path = archs/gliss2
 	url = https://github.com/jordr/gliss2
 [submodule "gliss2/riscv"]
-	path = gliss2/riscv
+	path = archs/riscv
 	url = https://github.com/jordr/riscv
 [submodule "otawa-riscv"]
-	path = otawa-riscv
+	path = archs/otawa-riscv
 	url = https://github.com/jordr/otawa-riscv.git
 [submodule "gliss2/armv5t"]
-	path = gliss2/armv5t
+	path = archs/armv5t
 	url = https://git.renater.fr/anonscm/git/gliss2/armv5t.git
 [submodule "gliss2/armv7t"]
-	path = gliss2/armv7t
+	path = archs/armv7t
 	url = https://git.renater.fr/anonscm/git/gliss2/armv7t.git
 [submodule "gliss2/mips"]
-	path = gliss2/mips
+	path = archs/mips
 	url = https://git.renater.fr/anonscm/git/gliss2/mips.git
 [submodule "gliss2/ppc"]
-	path = gliss2/ppc
+	path = archs/ppc
 	url = https://git.renater.fr/anonscm/git/gliss2/ppc.git
 [submodule "gliss2/sparc"]
-	path = gliss2/sparc
+	path = archs/sparc
 	url = https://git.renater.fr/anonscm/git/gliss2/sparc.git
 [submodule "otawa-ppc"]
-	path = otawa-ppc
+	path = archs/otawa-ppc
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-ppc.git
 [submodule "otawa-mpc5554"]
-	path = otawa-mpc5554
+	path = archs/otawa-mpc5554
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-mpc5554.git
 [submodule "otawa-lp_solve5"]
 	path = otawa-lp_solve5
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-lp_solve5.git
 [submodule "otawa-arm"]
-	path = otawa-arm
+	path = archs/otawa-arm
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-arm.git
 [submodule "gel"]
 	path = gel
@@ -65,10 +65,10 @@
 	path = obviews
 	url = https://github.com/jordr/obviews
 [submodule "tms"]
-	path = tms
+	path = archs/tms
 	url = https://github.com/statinf-software/tms
 [submodule "otawa-tms"]
-	path = otawa-tms
+	path = archs/otawa-tms
 	url = https://github.com/statinf-software/otawa-tms
 [submodule "lp_solve5"]
 	path = lp_solve5
