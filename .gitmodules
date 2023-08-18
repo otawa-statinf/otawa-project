@@ -1,39 +1,51 @@
 [submodule "otawa"]
 	path = otawa
-	url = https://github.com/jordr/otawa
+	url = https://github.com/statinf-otawa/otawa
+[submodule "elm"]
+	path = elm
+	url = https://github.com/statinf-otawa/elm
+[submodule "thot"]
+	path = thot
+	url = https://github.com/statinf-otawa/Thot
+[submodule "frontc"]
+	path = frontc
+	url = https://github.com/statinf-otawa/frontc
+[submodule "orange"]
+	path = orange
+	url = https://github.com/statinf-otawa/orange
+[submodule "gelpp"]
+	path = gelpp
+	url = https://github.com/statinf-otawa/gelpp
+[submodule "obviews"]
+	path = obviews
+	url = https://github.com/statinf-otawa/obviews
+[submodule "tms"]
+	path = archs/tms
+	url = https://github.com/statinf-software/tms
+[submodule "otawa-tms"]
+	path = archs/otawa-tms
+	url = https://github.com/statinf-software/otawa-tms
 [submodule "otawa-tricore"]
 	path = archs/otawa-tricore
-	url = https://github.com/hcasse/otawa-tricore.git
+	url = https://github.com/statinf-otawa/otawa-tricore.git
 [submodule "otawa-TC275T"]
 	path = archs/otawa-TC275T
 	url = https://github.com/hcasse/otawa-TC275T.git
-[submodule "elm"]
-	path = elm
-	url = https://github.com/jordr/elm
-[submodule "thot"]
-	path = thot
-	url = https://github.com/hcasse/Thot.git
-[submodule "frontc"]
-	path = frontc
-	url = https://github.com/jordr/frontc
-[submodule "orange"]
-	path = orange
-	url = https://github.com/jordr/orange
 [submodule "gliss2/gliss2"]
 	path = archs/gliss2
-	url = https://github.com/jordr/gliss2
+	url = https://github.com/statinf-otawa/gliss2
 [submodule "gliss2/riscv"]
 	path = archs/riscv
-	url = https://github.com/jordr/riscv
+	url = https://github.com/statinf-otawa/riscv
 [submodule "otawa-riscv"]
 	path = archs/otawa-riscv
-	url = https://github.com/jordr/otawa-riscv.git
+	url = https://github.com/statinf-otawa/otawa-riscv.git
 [submodule "gliss2/armv5t"]
 	path = archs/armv5t
-	url = https://git.renater.fr/anonscm/git/gliss2/armv5t.git
+	url = https://github.com/statinf-otawa/otawa-armv5t.git
 [submodule "gliss2/armv7t"]
 	path = archs/armv7t
-	url = https://git.renater.fr/anonscm/git/gliss2/armv7t.git
+	url = https://github.com/statinf-otawa/armv7t.git
 [submodule "gliss2/mips"]
 	path = archs/mips
 	url = https://git.renater.fr/anonscm/git/gliss2/mips.git
@@ -43,33 +55,24 @@
 [submodule "gliss2/sparc"]
 	path = archs/sparc
 	url = https://git.renater.fr/anonscm/git/gliss2/sparc.git
+[submodule "gliss2/tricore"]
+	path = archs/tricore
+	url = https://github.com/statinf-otawa/tricore.git
 [submodule "otawa-ppc"]
 	path = archs/otawa-ppc
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-ppc.git
 [submodule "otawa-mpc5554"]
 	path = archs/otawa-mpc5554
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-mpc5554.git
-[submodule "otawa-lp_solve5"]
-	path = otawa-lp_solve5
-	url = https://git.renater.fr/anonscm/git/otawa/otawa-lp_solve5.git
 [submodule "otawa-arm"]
 	path = archs/otawa-arm
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-arm.git
 [submodule "gel"]
 	path = gel
 	url = https://git.renater.fr/anonscm/git/otawa/gel.git
-[submodule "gelpp"]
-	path = gelpp
-	url = https://github.com/jordr/gelpp
-[submodule "obviews"]
-	path = obviews
-	url = https://github.com/jordr/obviews
-[submodule "tms"]
-	path = archs/tms
-	url = https://github.com/statinf-software/tms
-[submodule "otawa-tms"]
-	path = archs/otawa-tms
-	url = https://github.com/statinf-software/otawa-tms
 [submodule "lp_solve5"]
 	path = lp_solve5
 	url = https://git.renater.fr/anonscm/git/otawa/lp_solve5.git
+[submodule "otawa-lp_solve5"]
+	path = otawa-lp_solve5
+	url = https://git.renater.fr/anonscm/git/otawa/otawa-lp_solve5.git
