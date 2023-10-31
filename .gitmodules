@@ -31,31 +31,31 @@
 [submodule "otawa-TC275T"]
 	path = archs/otawa-TC275T
 	url = https://github.com/hcasse/otawa-TC275T.git
-[submodule "gliss2/gliss2"]
+[submodule "archs/gliss2"]
 	path = archs/gliss2
 	url = https://github.com/statinf-otawa/gliss2
-[submodule "gliss2/riscv"]
+[submodule "archs/riscv"]
 	path = archs/riscv
 	url = https://github.com/statinf-otawa/riscv
 [submodule "otawa-riscv"]
 	path = archs/otawa-riscv
 	url = https://github.com/statinf-otawa/otawa-riscv.git
-[submodule "gliss2/armv5t"]
+[submodule "archs/armv5t"]
 	path = archs/armv5t
 	url = https://github.com/statinf-otawa/armv5t.git
-[submodule "gliss2/armv7t"]
+[submodule "archs/armv7t"]
 	path = archs/armv7t
 	url = https://github.com/statinf-otawa/armv7t.git
-[submodule "gliss2/mips"]
+[submodule "archs/mips"]
 	path = archs/mips
 	url = https://git.renater.fr/anonscm/git/gliss2/mips.git
-[submodule "gliss2/ppc"]
+[submodule "archs/ppc"]
 	path = archs/ppc
 	url = https://git.renater.fr/anonscm/git/gliss2/ppc.git
-[submodule "gliss2/sparc"]
+[submodule "archs/sparc"]
 	path = archs/sparc
 	url = https://git.renater.fr/anonscm/git/gliss2/sparc.git
-[submodule "gliss2/tricore"]
+[submodule "archs/tricore"]
 	path = archs/tricore
 	url = https://github.com/statinf-otawa/tricore.git
 [submodule "otawa-ppc"]
