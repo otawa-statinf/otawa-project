@@ -64,6 +64,7 @@ cd otawa-riscv
 cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
 cd ..
 
+cd .. # Back to the project root
 # Now, we build the ILP solver lp_solve5 and its otawa plugin
 cd lp_solve5; cmake .; make; cd ..
 cd otawa-lp_solve5
