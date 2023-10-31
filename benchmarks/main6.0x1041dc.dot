@@ -1,16 +1,16 @@
-digraph  {
+digraph _main {
 node [shape=Mrecord, labeljust=l, fontsize=10];
-	"__0x001041dc_0_0" [label="ENTRY"];
-	"__0x001041dc_0_0" -> "__0x001041dc_0_1" [ style=dashed, weight=1];
-	"__0x001041dc_0_1" [label="{BB 1 (001041dc) | 001041dc    ADDB SP, #4\l001041de    MOV AL, *-SP[4]\l001041e0    SB 5, EQ    # 001041ea\l }"];
-	"__0x001041dc_0_1" -> "__0x001041dc_0_3" [ weight=4];
-	"__0x001041dc_0_1" -> "__0x001041dc_0_2" [ label="taken", weight=3];
-	"__0x001041dc_0_2" [label="{BB 2 (001041ea) | 001041ea    MOV AL, *-SP[1]\l }"];
-	"__0x001041dc_0_2" -> "__0x001041dc_0_4" [ weight=4];
-	"__0x001041dc_0_3" [label="{BB 3 (001041e2) | 001041e2    MOV AL, *-SP[2]\l001041e4    ADD AL, *-SP[1]\l001041e6    SUB AL, *-SP[3]\l001041e8    SB 2, UNC    # 001041ec\l }"];
-	"__0x001041dc_0_3" -> "__0x001041dc_0_2" [ weight=4];
-	"__0x001041dc_0_3" -> "__0x001041dc_0_4" [ label="taken", weight=3];
-	"__0x001041dc_0_4" [label="{BB 4 (001041ec) | 001041ec    SUBB SP, #4\l001041ee    LRETR\l }"];
-	"__0x001041dc_0_4" -> "__0x001041dc_0_5" [ style=dashed, weight=1];
-	"__0x001041dc_0_5" [label="EXIT"];
+	"_main_0_0" [label="ENTRY"];
+	"_main_0_0" -> "_main_0_1" [ style=dashed, weight=1];
+	"_main_0_1" [label="{BB 1 (001041dc) | _main:\l001041dc    ADDB SP, #4\l001041de    MOV AL, *-SP[4]\l001041e0    SB 5, EQ    # 001041ea\l }"];
+	"_main_0_1" -> "_main_0_3" [ weight=4];
+	"_main_0_1" -> "_main_0_2" [ label="taken", weight=3];
+	"_main_0_2" [label="{BB 2 (001041ea) | 001041ea    MOV AL, *-SP[1]\l }"];
+	"_main_0_2" -> "_main_0_4" [ weight=4];
+	"_main_0_3" [label="{BB 3 (001041e2) | 001041e2    MOV AL, *-SP[2]\l001041e4    ADD AL, *-SP[1]\l001041e6    SUB AL, *-SP[3]\l001041e8    SB 2, UNC    # 001041ec\l }"];
+	"_main_0_3" -> "_main_0_2" [ weight=4];
+	"_main_0_3" -> "_main_0_4" [ label="taken", weight=3];
+	"_main_0_4" [label="{BB 4 (001041ec) | 001041ec    SUBB SP, #4\l001041ee    LRETR\l }"];
+	"_main_0_4" -> "_main_0_5" [ style=dashed, weight=1];
+	"_main_0_5" [label="EXIT"];
 }

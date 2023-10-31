@@ -1,4 +1,5 @@
-checksum "mcp_app_CPU1.out" 0x4f7d7736;
+checksum "CPU1.out" 0x4f7d7736;
+// checksum "mcp_app_CPU1.out" 0x4f7d7736;
 
 // Low-level flow facts
 return "L$$MOD" + 0x1a;	// 0x00136af0 () switch-like branch in "L$$MOD"
