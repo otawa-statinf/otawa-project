@@ -11,6 +11,19 @@ git clone https://github.com/statinf-otawa/otawa-project --recurse-submodules
 ## External dependencies
 See below.
 
+## Docker
+You can get a base version of OTAWA with ARM/PPC/RISCV support using Docker:
+
+```
+docker build . -t otawa_base
+```
+
+Or directly pull it from [Github's Container Repository](https://github.com/orgs/statinf-otawa/packages)
+
+```
+docker pull ghcr.io/statinf-otawa/otawa-base
+```
+
 ## Building
 Provided you have the correct dependencies, this script should get you a running OTAWA install with ARM plugins:
 
