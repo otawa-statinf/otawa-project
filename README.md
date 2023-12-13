@@ -12,7 +12,7 @@ git clone https://github.com/statinf-otawa/otawa-project --recurse-submodules
 See below.
 
 ## Docker
-You can get a base version of OTAWA with ARM/PPC/RISCV support using Docker:
+You can get a base version of OTAWA with ARM/PPC/RISCV/Tricore support using Docker:
 
 ```
 docker build . -t otawa_base
