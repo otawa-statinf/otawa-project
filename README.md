@@ -81,12 +81,13 @@ cd .. # Back to the project root
 # Now, we build the ILP solver lp_solve5 and its otawa plugin
 cd lp_solve5; cmake .; make; cd ..
 cd otawa-lp_solve5
-cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR && make install
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
 cd ..
 
-# Now, we can build obviews
+# Obviews does not depend on the above nor does it require building
+# make install copies the script
 cd obviews
-cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR && make install
+make install
 cd ..
 
 # What we did not build: some obsolete architectures. Also, FrontC and Orange remain for loop bound identification. Thot for a custom documentation format used throughout. Some of the repositories also have documentation that is available with make doxygen
