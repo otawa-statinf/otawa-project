@@ -120,6 +120,22 @@ cd otawa-aarch64
 cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
 cd ..
 
+# Add dcache library
+cd otawa-clp 
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
+make install
+cd ../otawa-dcache
+git checkout xilinx
+git switch xilinx
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
+make install
+
+# Add xilinx board support
+cd ../archs/otawa-xilinx
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
+make install
+
+
 # What we did not build: some obsolete architectures. Also, FrontC and Orange remain for loop bound identification. Thot for a custom documentation format used throughout. Some of the repositories also have documentation that is available with make doxygen
 ```
 
