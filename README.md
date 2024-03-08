@@ -121,17 +121,15 @@ cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
 cd ..
 
 # Add dcache library
-cd otawa-clp 
-cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
+cd otawa-clp ; mkdir build ; cd build
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR ..
 make install
-cd ../otawa-dcache
-git checkout xilinx
-git switch xilinx
-cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
+cd ../../otawa-dcache ; mkdir build ; cd build
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR ..
 make install
 
 # Add xilinx board support
-cd ../archs/otawa-xilinx
+cd ../../archs/otawa-xilinx
 cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
 make install
 
