@@ -55,4 +55,5 @@ RUN cd ./archs/tricore; make WITH_DYNLIB=1 ; cd ../otawa-tricore; cmake -DCMAKE_
 #RUN cd ./archs/tms;     make WITH_DYNLIB=1; cd ../otawa-tms;     cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
 
 RUN cd ./archs/otawa-xilinx ; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
+RUN cd ./archs/otawa-STM32F427 ; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
 
