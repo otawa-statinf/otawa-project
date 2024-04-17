@@ -20,7 +20,7 @@ ARG OTAWA_INSTALL_DIR=/tmp/otawa-install
 ENV DISPLAY=:0
 ENV PATH="$PATH:$OTAWA_INSTALL_DIR/bin"
 
-# git equivalent: RUN git clone --branch=aarch64 --recursive https://github.com/jordr/otawa-project otawa-project
+# git equivalent: RUN git clone --branch=master --recursive https://github.com/jordr/otawa-project otawa-project
 USER statinf
 WORKDIR /home/statinf
 # also works, but with less caching:
