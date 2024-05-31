@@ -94,4 +94,7 @@
 [submodule "archs/otawa-STM32F427"]
 	path = archs/otawa-STM32F427
 	url = https://github.com/statinf-otawa/otawa-STM32F427.git
+[submodule "archs/otawa-NGULTRA"]
+	path = archs/otawa-NGULTRA
+	url = https://github.com/statinf-otawa/otawa-NGULTRA.git
 
