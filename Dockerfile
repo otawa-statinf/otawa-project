@@ -1,4 +1,6 @@
-FROM ubuntu:22.04
+ARG OTAWA_INSTALL_DIR=/tmp/otawa-install
+
+FROM ubuntu:22.04 as otawa-dev
 
 # To run obviews, you may need to install the following (and libgtk-3-dev)
 # add-apt-repository --yes ppa:mozillateam/ppa && \
@@ -15,7 +17,7 @@ RUN apt update && apt upgrade -y && apt install -y software-properties-common &&
     cp /etc/sudoers /etc/sudoers.bak && \
     echo 'statinf  ALL=(root) NOPASSWD: ALL' >> /etc/sudoers
 
-ARG OTAWA_INSTALL_DIR=/tmp/otawa-install
+ARG OTAWA_INSTALL_DIR
 
 ENV DISPLAY=:0
 ENV PATH="$PATH:$OTAWA_INSTALL_DIR/bin"
@@ -60,3 +62,7 @@ RUN cd ./archs/otawa-NGULTRA  ; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR 
 RUN cd ./archs/aarch64-armv8v9; make;\
     cd ../otawa-aarch64;        cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
 #RUN cd ./archs/tms;     make WITH_DYNLIB=1; cd ../otawa-tms;     cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
+
+FROM scratch as otawa
+ARG OTAWA_INSTALL_DIR
+COPY --from=otawa-build "$OTAWA_INSTALL_DIR" "$OTAWA_INSTALL_DIR"
