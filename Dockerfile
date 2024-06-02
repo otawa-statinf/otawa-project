@@ -65,4 +65,4 @@ RUN cd ./archs/aarch64-armv8v9; make;\
 
 FROM scratch as otawa
 ARG OTAWA_INSTALL_DIR
-COPY --from=otawa-build "$OTAWA_INSTALL_DIR" "$OTAWA_INSTALL_DIR"
+COPY --from=otawa-dev "$OTAWA_INSTALL_DIR" "$OTAWA_INSTALL_DIR"
