@@ -33,27 +33,30 @@ RUN cd ./gel             && cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . &&
 RUN cd ./gelpp           && cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install -j4
 RUN cd ./otawa           && cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install -j4
 
-# Install an ILP solver
+# Install an ILP solver for WCET computation
 RUN cd ./lp_solve5       && cmake . && make 
 RUN cd ./otawa-lp_solve5 && cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make && make install
 # Install CFG visualiser
 RUN cd ./obviews         && cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
-# Install stuffs for Xilinx platform support
+# Install data cache analysis for Xilinx platform support
 RUN cd ./otawa-clp      && cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
 RUN cd ./otawa-dcache      && cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
 
-# Install some archs
+# Install gliss2, for architecture plugin support
 RUN cd ./archs/gliss2    && make
+# Install OTAWA's base support architectures and microarchitectures
+RUN cd ./archs/ppc;     make WITH_DYNLIB=1;     cd ../otawa-ppc;     cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
+RUN cd ./archs/riscv;   make WITH_DYNLIB=1;     cd ../otawa-riscv;   cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
+RUN cd ./archs/tricore; make WITH_DYNLIB=1;     cd ../otawa-tricore; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
+# Install in-house ARM microarchectures support
+## ARM7
 RUN cd ./archs/armv5t;  make; cd ..;\
     cd armv7t;  make WITH_FAST_STATE=1;\
     cd ../otawa-arm; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
-RUN cd ./archs/aarch64-armv8v9 ; make; cd ..;\
-    cd otawa-aarch64 ; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
-RUN cd ./archs/ppc;     make WITH_DYNLIB=1;     cd ../otawa-ppc;     cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
-RUN cd ./archs/riscv;   make WITH_DYNLIB=1;     cd ../otawa-riscv;   cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
-RUN cd ./archs/tricore; make WITH_DYNLIB=1 ; cd ../otawa-tricore; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
+RUN cd ./archs/otawa-xilinx   ; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
+RUN cd ./archs/otawa-STM32F427; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
+RUN cd ./archs/otawa-NGULTRA  ; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
+## ARM8
+RUN cd ./archs/aarch64-armv8v9; make;\
+    cd ../otawa-aarch64;        cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
 #RUN cd ./archs/tms;     make WITH_DYNLIB=1; cd ../otawa-tms;     cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
-
-RUN cd ./archs/otawa-xilinx ; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
-RUN cd ./archs/otawa-STM32F427 ; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
-

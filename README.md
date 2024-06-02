@@ -92,8 +92,7 @@ cd ..
 # Obviews does not depend on the above nor does it require building
 # make install copies the script
 cd obviews
-cmake .
-make install
+cmake . && make install
 cd ..
 
 # Add dcache library
@@ -103,12 +102,23 @@ make install
 cd ../../otawa-dcache ; mkdir build ; cd build
 cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR ..
 make install
+cd ../..
 
 # Add xilinx board support
-cd ../../archs/otawa-xilinx
-cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
-make install
+cd archs/otawa-xilinx
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
+cd ../..
 
+# Extra ARM boards support
+cd otawa-STM32F427
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
+cd ..
+cd otawa-NGULTRA
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
+cd ..
+cd otawa-aarch64
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR . && make install
+cd ..
 
 # What we did not build: some obsolete architectures. Also, FrontC and Orange remain for loop bound identification. Thot for a custom documentation format used throughout. Some of the repositories also have documentation that is available with make doxygen
 ```
