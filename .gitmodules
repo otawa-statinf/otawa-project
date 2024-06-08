@@ -84,7 +84,7 @@
 	url = https://github.com/statinf-software/otawa-aarch64
 [submodule "otawa-clp"]
 	path = otawa-clp
-	url = https://git.renater.fr/anonscm/git/otawa/otawa-clp.git
+	url = https://github.com/statinf-otawa/otawa-clp.git
 [submodule "otawa-dcache"]
 	path = otawa-dcache
 	url = https://github.com/statinf-otawa/otawa-dcache.git
