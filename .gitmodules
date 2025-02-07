@@ -51,7 +51,7 @@
 	url = https://git.renater.fr/anonscm/git/gliss2/mips.git
 [submodule "archs/ppc"]
 	path = archs/ppc
-	url = https://git.renater.fr/anonscm/git/gliss2/ppc.git
+	url = https://github.com/statinf-otawa/ppc
 [submodule "archs/sparc"]
 	path = archs/sparc
 	url = https://git.renater.fr/anonscm/git/gliss2/sparc.git
