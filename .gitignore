@@ -1,2 +1,4 @@
 build.log
 otawa-install.py.old
+.vscode/
+otawa-install/
