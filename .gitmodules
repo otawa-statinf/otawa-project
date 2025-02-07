@@ -60,7 +60,7 @@
 	url = https://github.com/statinf-otawa/tricore.git
 [submodule "otawa-ppc"]
 	path = archs/otawa-ppc
-	url = https://git.renater.fr/anonscm/git/otawa/otawa-ppc.git
+	url = https://github.com/statinf-otawa/otawa-ppc.git
 [submodule "otawa-mpc5554"]
 	path = archs/otawa-mpc5554
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-mpc5554.git
